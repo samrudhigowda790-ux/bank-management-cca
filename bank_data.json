@@ -2,10 +2,22 @@
     "1234": {
         "name": "sam",
         "password": "1111",
-        "balance": 9400.0,
+        "balance": 14746.0,
         "transactions": [
             "Deposited \u20b910000.0",
-            "Withdrawn \u20b9600.0"
+            "Withdrawn \u20b9600.0",
+            "Deposited \u20b96000.0",
+            "Withdrawn \u20b9654.0"
+        ]
+    },
+    "2345": {
+        "name": "nidhi",
+        "password": "2222",
+        "balance": 3000.0,
+        "transactions": [
+            "Deposited \u20b92000.0",
+            "Withdrawn \u20b91000.0",
+            "Deposited \u20b92000.0"
         ]
     }
 }

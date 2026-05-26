@@ -167,11 +167,15 @@ def withdraw():
             raise ValueError
 
         if amt > data[acc]["balance"]:
-            messagebox.showerror(
-                "Error",
-                "Insufficient balance!"
+             current_balance = data[acc]["balance"]
+             
+             messagebox.showerror(
+                "Insufficient Balance",
+                f"Requested Amount: ₹{amt}\n"
+                f"Available Balance: ₹{current_balance}\n\n"
+                "Please enter a smaller amount."
             )
-            return
+        return
 
         data[acc]["balance"] -= amt
         data[acc]["transactions"].append(f"Withdrawn ₹{amt}")
